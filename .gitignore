@@ -1,0 +1,10 @@
+/bin
+/target/
+/.settings/
+/.classpath
+.project
+net_tatic*
+*.o
+*.so
+hs*.log
+*.swp
