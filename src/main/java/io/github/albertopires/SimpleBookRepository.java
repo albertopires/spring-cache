@@ -11,7 +11,7 @@ public class SimpleBookRepository implements BookRepository {
 	private static final Logger logger = LoggerFactory.getLogger(SimpleBookRepository.class);
 
 	@Override
-	@Cacheable("books")
+	@Cacheable(value="books", sync=true)
 	public Book getByIsbn(String isbn) {
 		logger.info("getting by isbn...:"+isbn);
 		simulateSlowService();
